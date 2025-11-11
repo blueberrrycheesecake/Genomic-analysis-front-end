@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Upload, Zap, Shield, TrendingUp, Lock } from 'lucide-react';
 
@@ -30,7 +31,7 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="pt-20 pb-32 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-full mx-auto text-center">
           <div className="inline-block mb-8">
             <span className="px-6 py-2 bg-cyan-50 text-cyan-600 rounded-full text-sm font-medium border border-cyan-100">
               Next-Generation Genomic Analysis
@@ -48,16 +49,18 @@ export default function App() {
             Upload your raw genetic data and discover comprehensive insights with our advanced genomic processing platform
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition-all duration-300 shadow-lg shadow-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-400/60 animate-pulse hover:animate-none flex items-center justify-center">
-              Upload Your Data
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-            <button className="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-300 border-2 border-gray-200">
-              Learn More
-            </button>
+          <div className="flex flex-row gap-4 justify-center">
+          <button className="px-8 py-4 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition-all duration-300 shadow-lg shadow-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-400/60 animate-pulse hover:animate-none flex items-center justify-center">
+           Upload Your Data
+          <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+          </button>
+          <Link to="/learn-more">
+          <button className="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-300 border-2 border-gray-200">
+          Learn More
+          </button>
+          </Link>
           </div>
         </div>
       </section>
@@ -179,9 +182,10 @@ export default function App() {
       {/* Footer */}
       <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200 bg-gray-50">
         <div className="max-w-7xl mx-auto text-center text-gray-600">
-          <p>&copy; 2024 Genomic Analysis Platform. All rights reserved.</p>
+          <p>&copy; 2025 Genomic Analysis Platform. All rights reserved.</p>
         </div>
       </footer>
     </div>
   );
+  
 }

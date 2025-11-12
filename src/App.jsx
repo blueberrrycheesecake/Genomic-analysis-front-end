@@ -50,20 +50,17 @@ export default function App() {
           </p>
           
           <div className="flex flex-row gap-4 justify-center">
-          <button className="px-8 py-4 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition-all duration-300 shadow-lg shadow-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-400/60 animate-pulse hover:animate-none flex items-center justify-center">
-           Upload Your Data
+          <Link to="/learn-more">
+          <button className="px-8 py-4 bg-cyan-600 text-white rounded-lg font-semibold hover:bg-cyan-700 transition-all duration-300 shadow-lg shadow-cyan-600/50 hover:shadow-2xl hover:shadow-cyan-500/60 animate-pulse hover:animate-none flex items-center justify-center">
+           Learn More
           <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
           </button>
-          <Link to="/learn-more">
-          <button className="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-300 border-2 border-gray-200">
-          Learn More
-          </button>
           </Link>
           </div>
-        </div>
-      </section>
+          </div>
+   </section>
 
       {/* Upload Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
